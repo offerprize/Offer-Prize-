@@ -1,111 +1,110 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offer Prize - Best Deals For You</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }body {
-        background-color: #f0f4f8;
-        color: #333;
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offer Prize</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
     }
-
     header {
-        background-color: #0d6efd;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
     }
-
     nav {
-        margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      background-color: #388E3C;
+      padding: 0.5rem;
     }
-
     nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: 500;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
-
-    .container {
-        padding: 30px 20px;
-        max-width: 1000px;
-        margin: auto;
+    .hero {
+      background-color: #c8e6c9;
+      padding: 2rem;
+      text-align: center;
     }
-
-    .card {
-        background: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        margin-bottom: 20px;
+    .hero h1 {
+      margin: 0 0 1rem 0;
     }
-
-    .btn {
-        display: inline-block;
-        background: #0d6efd;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        transition: background 0.3s ease;
+    .section {
+      padding: 2rem;
+      text-align: center;
     }
-
-    .btn:hover {
-        background: #084cc0;
+    .products {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 1rem;
     }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #e3e3e3;
-        font-size: 14px;
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 250px;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-
-    @media(max-width: 600px) {
-        nav a {
-            display: block;
-            margin: 10px 0;
-        }
+    .footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
-</style>
-
-</head><body>
-    <header>
-        <h1>Offer Prize</h1>
-        <p>আপনার পছন্দের পণ্য এখন সেরা দামে!</p>
-        <nav>
-            <a href="#products">Products</a>
-            <a href="https://www.facebook.com/share/161jxi9Thz/">Facebook Page</a>
-            <a href="https://wa.me/8801863633981">WhatsApp</a>
-        </nav>
-    </header><div class="container">
-    <div class="card" id="products">
-        <h2>🔥 Featured Products</h2>
-        <ul>
-            <li>✅ Stylish Sunglasses - 499৳</li>
-            <li>✅ Digital Smart Watch - 999৳</li>
-            <li>✅ Combo Offer: Watch + Glass - 1299৳</li>
-        </ul>
-        <br>
-        <a class="btn" href="https://forms.gle/abc123xyz">অর্ডার করতে ক্লিক করুন</a>
+    .contact-links {
+      margin-top: 1rem;
+    }
+    .contact-links a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Offer Prize</h1>
+    <p>Best Deals Delivered to Your Doorstep</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero" id="home">
+    <h1>Welcome to Offer Prize</h1>
+    <p>Your Trusted Online Shopping Partner</p>
+  </section>
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>We provide exclusive products like stylish watches, sunglasses, and more — all at great prices. Stay tuned!</p>
+  </section>
+  <section class="section" id="products">
+    <h2>Featured Products</h2>
+    <p><em>Product listing is coming soon. Stay tuned for exciting offers!</em></p>
+  </section>
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-links">
+      <a href="https://wa.me/8801863633981" target="_blank">WhatsApp</a>
+      <a href="https://www.facebook.com/share/161jxi9Thz/" target="_blank">Facebook Page</a>
     </div>
-
-    <div class="card">
-        <h3>📞 যোগাযোগ করুন</h3>
-        <p>WhatsApp: <a href="https://wa.me/8801863633981">01863633981</a></p>
-        <p>Facebook Page: <a href="https://www.facebook.com/share/161jxi9Thz/">Offer Prize Page</a></p>
-    </div>
-</div>
-
-<footer>
-    &copy; 2025 Offer Prize. All Rights Reserved.
-</footer>
-
-</body></html>
+  </section>
+  <footer class="footer">
+    &copy; 2025 Offer Prize. All rights reserved.
+  </footer>
+</body>
+</html>
