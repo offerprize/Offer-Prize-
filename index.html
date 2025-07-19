@@ -1,75 +1,134 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Offer Prize</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Offer Prize - Best Online Deals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Roboto', sans-serif;
-    }
     body {
-      background-color: #0a0a0a;
-      color: white;
-      padding: 20px;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
     }
     header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 40px;
     }
-    h1 {
-      font-size: 2.5rem;
-      color: #00ffcc;
-    }
-    .contact {
+    nav {
       text-align: center;
-      margin-bottom: 20px;
-      font-size: 1rem;
-      color: #aaaaaa;
+      background-color: #222;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://i.ibb.co/B2PFFtr/offer-banner.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .btn {
+      background-color: #ff6a00;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      text-decoration: none;
     }
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
     }
-    .product {
-      background-color: #1a1a1a;
+    .product-card {
+      background-color: white;
+      padding: 15px;
       border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #111;
+      color: white;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
-    }
-    .product h2 {
-      color: #00ffcc;
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-    .product p {
-      font-size: 0.95rem;
-      color: #dddddd;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Offer Prize</h1>
-    <div class="contact">
-      <p>Facebook: <a href="https://www.facebook.com/share/1HEMBp9CjJ/" style="color:#00ffcc;">Click here</a></p>
-      <p>Phone: 01863633981</p>
-    </div>
+    <p>Smart Style. Smart Price.</p>
   </header>
-  <section class="products">
-    <div class="product">
-      <h2>Demo Product 1</h2>
-      <p>This is a sample product description.</p>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="https://wa.me/8801863633981">WhatsApp</a>
+    <a href="https://www.facebook.com/share/161jxi9Thz/">Facebook</a>
+  </nav>
+
+  <div class="hero" id="home">
+    💥 Big Deals on Sunglasses & Watches!
+  </div>
+
+  <div class="section" id="products">
+    <h2>Our Featured Products</h2>
+    <div class="products">
+
+      <div class="product-card">
+        <img src="https://i.ibb.co/pPZr9Th/sunglass1.jpg" alt="Sunglass">
+        <h3>Black Aviator Sunglass</h3>
+        <p>৳499</p>
+        <a href="https://wa.me/8801863633981?text=I%20want%20to%20buy%20Black%20Aviator%20Sunglass" class="btn">Buy Now</a>
+      </div>
+
+      <div class="product-card">
+        <img src="https://i.ibb.co/68H62kN/watch1.jpg" alt="Watch">
+        <h3>Digital Sports Watch</h3>
+        <p>৳999</p>
+        <a href="https://wa.me/8801863633981?text=I%20want%20to%20buy%20Digital%20Watch" class="btn">Buy Now</a>
+      </div>
+
     </div>
-    <div class="product">
-      <h2>Demo Product 2</h2>
-      <p>This is another sample product description.</p>
-    </div>
-    <!-- Add more products by copying the above block -->
-  </section>
+  </div>
+
+  <div class="section">
+    <h2>Why Choose Offer Prize?</h2>
+    <p>✅ Cash on Delivery | 🚚 Free Shipping | ❤️ Trusted by 1000+ Customers</p>
+    <a href="https://wa.me/8801863633981" class="btn">Order on WhatsApp</a>
+    <a href="https://www.facebook.com/share/161jxi9Thz/" class="btn">Visit Facebook Page</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Offer Prize. All rights reserved.
+  </footer>
+
 </body>
 </html>
